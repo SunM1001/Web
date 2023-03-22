@@ -1,0 +1,43 @@
+/* 제목 */
+.title{
+    text-align: center;
+    color: white; 
+    font-size: 50px; 
+    font-family: GRAPHIC PSYCHOPATHY;
+    src: url(C:\Users\daumpot\Documents\font);
+    position: relative;
+    top: 200px;
+    
+}
+.hidden{
+    text-decoration: none; 
+    color: white;
+}
+/* 제목 */
+
+.font{
+    font-size: 30px;
+    color: white;
+    font-family: GRAPHIC PSYCHOPATHY;
+    src: url(C:\Users\daumpot\Documents\font);
+}
+
+/* .story{
+    padding-top: 50px;
+}
+
+.play{
+    padding-top: 50px;
+}
+
+.image{
+    padding-top: 50px;  
+} */
+
+div > div {
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+
