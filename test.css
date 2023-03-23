@@ -16,7 +16,6 @@
 /* 제목 */
 
 .font{
-    font-size: 30px;
     color: white;
     font-family: GRAPHIC PSYCHOPATHY;
     src: url(C:\Users\daumpot\Documents\font);
@@ -35,9 +34,35 @@
 } */
 
 div > div {
-    padding-top: 100px;
+    position: relative;
+    top: 50px;
+    font-size: 70px;
+    padding-top: 30px;
     text-align: center;
 }
 
+.story, .controls {
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+
+
+.story {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      position: relative;
+      top: 50px;
+    }
+  
+    to {
+      position: relative;
+      top: 30px;
+    }
+  }
 
 
