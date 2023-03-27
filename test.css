@@ -35,6 +35,7 @@ div > div {
     top: 30px;
     font-size: 30px;
     opacity: 0;
+
 }
 
 .a:hover ~ .story {
@@ -43,10 +44,23 @@ div > div {
     opacity: 1;
 }
 
-.a {
-    width: auto;
-    height: auto;
+.a:not(:hover) ~ .story {
+    transition: all 1s;
+    opacity: 0;
 }
+
+
+.b:hover ~ .controls {
+    transform: translateY(-15px);
+    transition: all 1s;
+    opacity: 1;
+}
+
+.b:not(:hover) ~ .controls {
+    transition: all 1s;
+    opacity: 0;
+}
+
 
 /* .story {
     animation-duration: 1s;
