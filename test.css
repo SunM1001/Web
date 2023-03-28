@@ -1,84 +1,81 @@
-/* 제목 */
-.title{
-    text-align: center;
-    color: white; 
-    font-size: 50px; 
-    font-family: GRAPHIC PSYCHOPATHY;
-    src: url(C:\Users\daumpot\Documents\font);
-    position: relative;
-    top: 200px;
-    
-}
-.hidden{
-    text-decoration: none; 
-    color: white;
-}
-/* 제목 */
-
 * {
     color: white;
     font-family: GRAPHIC PSYCHOPATHY;
     src: url(C:\Users\daumpot\Documents\font);
 }
 
-
-div > div {
-    position: relative;
-    top: 50px;
-    font-size: 100px;
-    padding-top: 30px;
-    text-align: center;
+body {
+    background-color: black;
 }
+
+.story_ani, .con_ani {
+    cursor: pointer;
+}
+
+
+span {
+    font-size: 100px;
+    padding-top: 50px;
+    
+}
+
+.form_1 {
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: 100px;
+}
+
+.form_2 {
+    position: absolute;
+    text-align: center;
+    left: 60%;
+    top: 100px;
+}
+
 
 .story, .controls {
     position: relative;
-    top: 30px;
+    top: 20px;
     font-size: 30px;
     opacity: 0;
 
 }
 
-.a:hover ~ .story {
+
+
+
+
+
+
+
+
+
+
+
+
+/* 애니메이션 */
+.story_ani:hover ~ .story {
     transform: translateY(-10px);
     transition: all 1s;
     opacity: 1;
 }
 
-.a:not(:hover) ~ .story {
+.story_ani:not(:hover) ~ .story {
     transition: all 1s;
     opacity: 0;
 }
 
 
-.b:hover ~ .controls {
+.con_ani:hover ~ .controls {
     transform: translateY(-15px);
     transition: all 1s;
     opacity: 1;
 }
 
-.b:not(:hover) ~ .controls {
+.con_ani:not(:hover) ~ .controls {
     transition: all 1s;
     opacity: 0;
 }
-
-
-/* .story {
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-      position: relative;
-      top: 50px;
-    }
-  
-    to {
-      position: relative;
-      top: 30px;
-      transform: translateX(1);
-    }
-  } */
-
-
+/* 애니메이션 */
 
