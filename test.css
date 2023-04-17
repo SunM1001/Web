@@ -4,51 +4,78 @@
     src: url(C:\Users\daumpot\Documents\font);
 }
 
-body {
-    background-color: black;
-}
-
 .story_ani, .con_ani {
     cursor: pointer;
 }
 
 
-span {
-    font-size: 100px;
-    padding-top: 50px;
+div {
+    font-size: 50px;
+    /* padding-top: 50px; */
 
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner > img {
+    width: 50%;
+    height: 10%;
 }
 
 .form_1 {
-    position: absolute;
+    text-align: center;
+    padding-top: 50px;
+
+    /* position: absolute;
     text-align: center;
     left: 15%;
-    top: 100px;
+    top: 100px; */
 }
 
 .form_2 {
-    position: absolute;
+
     text-align: center;
-    left: 60%;
-    top: 100px;
+    padding-top: 50px;
+    /* position: absolute;
+    text-align: center;
+    left: 58%;
+    top: 100px; */
 }
 
 
-.story, .controls {
+.background {
+    position: fixed;
+    overflow: hidden;
+    background-image: url(background_img.png);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    z-index: -1;
+}
+
+.content {
     position: relative;
-    top: 30px;
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50%;
+    max-width: 1200px;
+    background: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.story, .controls {
+    margin-top: 50px;
     font-size: 30px;
     opacity: 0;
 
 }
-
-
-
-
-
-
-
-
 
 
 /* 애니메이션 */
@@ -75,4 +102,3 @@ span {
     opacity: 0;
 }
 /* 애니메이션 */
-
