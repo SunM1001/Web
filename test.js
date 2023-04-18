@@ -1,7 +1,11 @@
-const btn = document.querySelector('button');
-const box = document.querySelector('story');
+const box1 = document.querySelector('.box:nth-child(1)');
+const box2 = document.querySelector('.box:nth-child(2)');
+const content2 = document.querySelector('.box:nth-child(2) .content');
 
-// div 클릭 시 act 클래스 토글
-btn.addEventListener('click', () => {
-  box.classList.toggle('act');
-})
+box1.addEventListener('mouseenter', () => {
+  content2.classList.add('animate');
+});
+
+box1.addEventListener('mouseleave', () => {
+  content2.classList.remove('animate');
+});
