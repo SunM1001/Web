@@ -1,11 +1,15 @@
-const box1 = document.querySelector('.box:nth-child(1)');
-const box2 = document.querySelector('.box:nth-child(2)');
-const content2 = document.querySelector('.box:nth-child(2) .content');
+var ani1 = document.querySelector('.story_ani');
+var ani2 = document.querySelector('.form2');
 
-box1.addEventListener('mouseenter', () => {
-  content2.classList.add('animate');
+
+ani1.addEventListener("mouseover", function() {
+  ani2.style.transform = 'translateY(100px)';
+  ani2.style.transition = 'all 1s';
+  ani2.style.opacity = '1';
 });
 
-box1.addEventListener('mouseleave', () => {
-  content2.classList.remove('animate');
+ani1.addEventListener("mouseout", function() {
+  ani2.style.transform = 'translateY(-50px)';
+  ani2.style.transition = 'all 1s';
+  ani2.style.opacity = '1';
 });
