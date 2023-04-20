@@ -31,7 +31,7 @@ div {
 
 .form1 {
     text-align: center;
-    padding-top: 50px 10px 10px 10px;
+    padding-top: 100px 10px 10px 10px;
 
     /* position: absolute;
     text-align: center;
@@ -41,6 +41,7 @@ div {
 
 .form2 {
     text-align: center;
+    padding: 50px 10px 10px 10px;
     /* padding-top: 50px; */
     /* position: absolute;
     text-align: center;
@@ -86,7 +87,7 @@ div {
 
 .story_ani:hover ~ .story,
 .con_ani:hover ~ .controls {
-    transform: translateY(-10px);
+    transform: translateY(10px);
     opacity: 1;
     transition: all 1s;
 }
@@ -98,4 +99,6 @@ div {
 }
 
 /* 애니메이션 */
+
+
 
