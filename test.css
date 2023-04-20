@@ -31,7 +31,7 @@ div {
 
 .form1 {
     text-align: center;
-    padding-top: 100px 10px 10px 10px;
+    padding-top: 100px;
 
     /* position: absolute;
     text-align: center;
@@ -41,7 +41,6 @@ div {
 
 .form2 {
     text-align: center;
-    padding: 50px 10px 10px 10px;
     /* padding-top: 50px; */
     /* position: absolute;
     text-align: center;
@@ -66,7 +65,7 @@ div {
 .content {
     position: relative;
     margin: 0 auto;
-    /* padding: 50px 0; */
+    padding: 50px 0;
     width: 60%;
     max-width: 100%;
     background: black;
@@ -87,7 +86,7 @@ div {
 
 .story_ani:hover ~ .story,
 .con_ani:hover ~ .controls {
-    transform: translateY(10px);
+    transform: translateY(15px);
     opacity: 1;
     transition: all 1s;
 }
@@ -96,6 +95,37 @@ div {
 .con_ani:not(:hover) ~ .controls {
     opacity: 0;
     transition: all 1s;
+}
+
+.form1.animate, .form2.animate {
+    animation: loadanimation1 1s ;
+    animation: loadanimation2 1s ;
+}
+
+@keyframes loadanimation1 {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+        transition: all 1s;
+    }
+
+    100% {
+        opacity: 1;
+        transition: all 1s;
+    }
+}
+
+@keyframes loadanimation2 {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+        transition: all 1s;
+    }
+
+    100% {
+        opacity: 1;
+        transition: all 1s;
+    }
 }
 
 /* 애니메이션 */
