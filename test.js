@@ -3,6 +3,7 @@ var ani2 = document.querySelector('.form2');
 var story = document.querySelector('.story');
 var loadanimation1 = document.querySelector('.form1');
 var loadanimation2 = document.querySelector('.form2');
+var loadanimation3 = document.querySelector('.form3');
 
 
 ani1.addEventListener("mouseover", function() {
@@ -21,3 +22,12 @@ ani1.addEventListener("mouseout", function() {
 document.addEventListener('DOMContentLoaded', function() {
   loadanimation1.classList.add('animate');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadanimation2.classList.add('animate');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadanimation3.classList.add('animate');
+});
+
