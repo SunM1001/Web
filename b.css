@@ -3,11 +3,11 @@
   height: 400px;
   overflow: hidden;
   white-space: nowrap;
+  background: black;
 }
 
-.image-container img {
+.image-container > img {
   display: inline-block;
   width: 600px;
   height: 400px;
-  margin-right: 20px;
 }

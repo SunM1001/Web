@@ -38,13 +38,30 @@ function dragEnd(e) {
 }
 
 
+function scrollAnimate(start, end, duration) {
+  var startTime = performance.now();
+  function scroll() {
+    var currentTime = performance.now();
+    var time = Math.min(1, (currentTime - startTime) / duration);
+    var easedTime = easeOutCubic(time);
+    var scrollLeft = (end - start) * easedTime + start;
+    container.scrollLeft = scrollLeft;
+    if (time < 1) {
+      requestAnimationFrame(scroll);
+    }
+  }
+  requestAnimationFrame(scroll);
+}
+
 function wheelMove(e) {
   e.preventDefault();
   var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-  container.scrollLeft -= (delta * 30);
-  
-  // 마우스 휠 이벤트 발생 후 container 영역을 벗어나면 스크롤 초기화 방지
-  if (e.pageX < container.offsetLeft || e.pageX > container.offsetLeft + container.offsetWidth) {
-    container.scrollLeft += (delta * 30);
-  }
+  var imageWidth = images[0].width; // 이미지 하나의 너비
+  var currentScrollLeft = container.scrollLeft;
+  var nextScrollLeft = currentScrollLeft - delta * imageWidth;
+  scrollAnimate(currentScrollLeft, nextScrollLeft, 1000); // 500ms 동안 애니메이션 적용
+}
+
+function easeOutCubic(t) {
+  return 1 - Math.pow(1 - t, 3);
 }
