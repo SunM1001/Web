@@ -10,9 +10,6 @@
 <body>
     <div class="background"></div>
     <div class="content">
-        <div class="banner">
-            <img src="ingame1.png">
-        </div>
         <!-- form1 -->
         <div class="form1">
             <label class="story_ani">story</label>
@@ -38,21 +35,42 @@
         </div>
         <!-- form3 -->
         <div class="form3">
-            <label class="">Image</label>
-            <div class="image-container">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
+            <label class="image_ani">image</label>
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="slide03" class="left"></label>
+                                <img src="ingame1.png">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <img src="ingame1.png">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide02" class="left"></label>
+                                <img src="ingame1.png">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
         </div>
-
-
-
+        
+            
+    </div>
 
     <script src="test.js"></script>
-    
 </body>
 </html>

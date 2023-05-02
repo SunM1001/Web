@@ -1,21 +1,25 @@
 var ani1 = document.querySelector('.story_ani');
-var ani2 = document.querySelector('.form2');
-var story = document.querySelector('.story');
+var ani2 = document.querySelector('.con_ani');
+var form2 = document.querySelector('.form2');
+var form3 = document.querySelector('.form3');
+
+
+
 var loadanimation1 = document.querySelector('.form1');
 var loadanimation2 = document.querySelector('.form2');
 var loadanimation3 = document.querySelector('.form3');
 
 
 ani1.addEventListener("mouseover", function() {
-  ani2.style.transform = 'translateY(50px)';
-  ani2.style.transition = 'all 1s';
-  ani2.style.opacity = '1';
+  form2.style.transform = 'translateY(50px)';
+  form2.style.transition = 'all 1s';
+  form2.style.opacity = '1';
 });
 
 ani1.addEventListener("mouseout", function() {
-  ani2.style.transform = 'translateY(-50px)';
-  ani2.style.transition = 'all 1s';
-  ani2.style.opacity = '1';
+  form2.style.transform = 'translateY(-50px)';
+  form2.style.transition = 'all 1s';
+  form2.style.opacity = '1';
 });
 
 
