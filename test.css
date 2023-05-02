@@ -23,6 +23,14 @@ label {
 
 }
 
+.content {
+    padding-top: 150px;
+}
+
+.form2 {
+    padding-bottom: 100px;
+}
+
 
 
 .background {
@@ -41,7 +49,7 @@ label {
 
 
 .story, .controls {
-    padding: 50px;
+    padding-top: 50px;
     font-size: 30px;
 }
 
@@ -118,9 +126,10 @@ label {
 	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
 	.section .slidewrap {
         max-width:1200px;
+        max-height: 1000px;
         margin:0 auto;
         overflow:hidden;
-
+        border-radius: 50px;
     }
 	.section .slidelist {
         white-space:nowrap;
@@ -137,7 +146,7 @@ label {
         position:relative;
     }
 	.section .slidelist > li > a img {
-        width:90%;
+        width:100%;
     }
 
 	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
@@ -162,5 +171,7 @@ label {
 	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
 	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
 	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+    .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+    .section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
 
 /********* 이미지 슬라이더 *********/

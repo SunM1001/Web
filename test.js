@@ -17,10 +17,24 @@ ani1.addEventListener("mouseover", function() {
 });
 
 ani1.addEventListener("mouseout", function() {
-  form2.style.transform = 'translateY(-50px)';
+  form2.style.transform = 'translateY(0px)';
   form2.style.transition = 'all 1s';
   form2.style.opacity = '1';
 });
+
+ani2.addEventListener("mouseover", function() {
+  form3.style.transform = 'translateY(50px)';
+  form3.style.transition = 'all 1s';
+  form3.style.opacity = '1';
+});
+
+ani2.addEventListener("mouseout", function() {
+  form3.style.transform = 'translateY(0px)';
+  form3.style.transition = 'all 1s';
+  form3.style.opacity = '1';
+});
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
